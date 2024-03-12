@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Jumpin' Juice Co.</title>
+	<meta charset="UTF-8">
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,200&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<nav id="navbar">
+    <img id="logo" src="assets/logo.jpg" alt="logo" />
+		<div id="right">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="faq.html">FAQs</a>
+      <a href="contact.html">Contact</a>
+      <a href="locations.html">Locations</a>
+    </div>
+	</nav>
+  <div id="container">
+    <div id="content">
+
+      <figure>
+        <img class="animImg" src="assets/fresh.jpeg" alt="fresh" style="width: 65%; height: auto" />
+      </figure>
+      <figcaption>Fresh ingredients. <b>Always.</b></figcaption>
+
+      <br />
+      <br />
+
+      <div id="main">
+        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+      </div>
+
+      <div id="sidebar">
+        <div class="reviews">
+          <a href="reviewpages/review1.html"><img class="reviewimg" src="assets/reviewphotos/reviewcaseywinn.jpeg" alt="reviewcaseywinn" /></a>
+          <p><b>Casey Winn: </b>Best service I ever receive combined with flavorful, experimental ingredients. Love, love, love!</p>
+          <a href="reviewpages/review2.html"><img class="reviewimg" src="assets/reviewphotos/reviewcharlesseller.jpeg" alt="reviewcharlesseller" /></a>
+          <p><b>Charles Seller: </b>Come here after work every day. A nice treat for anyone. 5/5.</p>
+          <a href="reviewpages/review3.html"><img class="reviewimg" src="assets/reviewphotos/reviewjennkim.jpeg" alt="reviewjennkim" /></a>
+          <p><b>Jenn Kim: </b>Not much to say-- just really good smoothies, and some great picks for snacks as well. Fully endorse and take my kids here all the time.</p>
+          <a href="reviewpages/review4.html"><img class="reviewimg" src="assets/reviewphotos/reviewtuckersaldana.jpeg" alt="reviewtuckersaldana" /></a>
+          <p><b>Tucker Saldana: </b>HOLY CRAP i love every thinn on their menu... wowwowo :))) LOVE THIS PLACE!!!!11!</p>
+        </div>
+      </div>
+      
+      <iframe class="ytembed" width="370" height="250" src="https://www.youtube.com/embed/YuDhbLQtt2k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    </div>
+
+    <footer>
+      <p>Copyright ©2021 Jumpin' Juice Co.</p>
+    </footer>
+  </div>
+
+  <div class="modal-container">
+    <div id="myModal" class="modal">
+      <span class="close">&times;</span>
+      <p>Welcome to our site! Click on any reviewer's profile image to see their full review.</p>
+    </div>
+  </div>
+  <script>
+    var modal = document.getElementById("myModal");
+    var btn = document.getElementsByClassName("close")[0];
+    setTimeout(function() {modal.style.display = "block";}, 2000);
+    btn.onclick = function() {modal.style.display = "none";}
+  </script>
+</body>
+</html>

@@ -1,0 +1,225 @@
+h1 {
+  font-family: Montserrat;
+  font-size: 48px;
+  text-align-last: center;
+}
+
+h2 {
+  font-family: Montserrat;
+  font-size: 24px;
+  text-align-last: center;
+  position: relative;
+}
+
+p.red {
+  font-family: Montserrat;
+  font-variant: light;
+  font-size: 18px;
+  color: red;
+}
+
+p {
+  font-family: Montserrat;
+  font-variant: light;
+  font-size: 18px;
+}
+
+a {
+  font-family: Montserrat;
+  font-variant: light;
+  font-size: 18px;
+}
+
+footer > p {
+  font-family: Montserrat;
+  font-variant: light;
+  font-size: 12px;
+  text-align: center;
+}
+
+figcaption {
+  font-family: Montserrat;
+  font-size: 12px;
+  text-align-last: center;
+  font-weight: bold;
+}
+
+#container {
+  min-height: 100%;
+  position: relative;
+}
+
+#content {
+  padding-bottom: 200px;
+}
+
+footer {
+  position: absolute;
+  bottom:0;
+  width:100%;
+  height:60px;
+  background:white;
+}
+
+.ftimg {
+  display: block;
+  width: 50%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.grad {
+  background-image: linear-gradient(90deg, rgba(9,56,124,1) 0%, rgba(79,222,255,0.4) 100%);
+}
+
+.column {
+  float: left;
+  width: calc(50% - 20px);
+  padding: 10px;
+}
+
+.column img {
+  margin-top: 10px;
+  width: 100%;
+  height: auto;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.topimgformat {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75px;
+  height: 50px;
+}
+
+ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+
+  h1 {
+    font-family: Montserrat;
+    font-size: 48px;
+    text-align-last: center;
+  }
+
+  h2 {
+    font-family: Montserrat;
+    font-size: 24px;
+    text-align-last: center;
+    position: relative;
+  }
+
+  p.red {
+    font-family: Montserrat;
+    font-variant: light;
+    font-size: 18px;
+    color: red;
+  }
+
+  p {
+    font-family: Montserrat;
+    font-variant: light;
+    font-size: 18px;
+  }
+
+  a {
+    font-family: Montserrat;
+    font-variant: light;
+    font-size: 18px;
+  }
+
+  footer > p {
+    font-family: Montserrat;
+    font-variant: light;
+    font-size: 12px;
+    text-align: center;
+  }
+
+  figcaption {
+    font-family: Montserrat;
+    font-size: 12px;
+    text-align-last: center;
+    font-weight: bold;
+  }
+
+  #container {
+    min-height: 100%;
+    position: relative;
+  }
+
+  #content {
+    padding-bottom: 200px;
+  }
+
+  footer {
+    position: absolute;
+    bottom:0;
+    width:100%;
+    height:60px;
+    background:white;
+  }
+
+  .ftimg {
+    width: 300px;
+    height: 200px;
+  }
+
+  .textleft {
+    float: left; margin: 0 25px 0 0;
+  }
+
+  .textright {
+    float: right; margin: 0 0 0 25px;
+  }
+
+  .grad {
+    background-image: linear-gradient(90deg, rgba(9,56,124,1) 0%, rgba(79,222,255,0.4) 100%);
+  }
+
+  .column {
+    float: left;
+    width: calc(50% - 20px);
+    padding: 10px;
+  }
+
+  .column img {
+    margin-top: 10px;
+    width: 100%;
+    height: auto;
+  }
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .topimgformat {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75px;
+    height: 50px;
+  }
+
+  .nav > li {
+    display: inline;
+    padding: 12px;
+  }
+
+  ul {
+    list-style-type: none;
+    text-align: center;
+  }
+
+}

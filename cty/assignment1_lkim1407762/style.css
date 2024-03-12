@@ -1,0 +1,33 @@
+h1 {
+	font-family: Montserrat;
+	font-size: 48px;
+	text-align-last: center;
+}
+
+p {
+	font-family: Montserrat;
+	font-variant: light;
+	font-size: 18px;
+}
+
+.grad {
+	background-image: linear-gradient(90deg, rgba(9,56,124,1) 0%, rgba(79,222,255,0.4) 100%);
+}
+
+.column {
+  float: left;
+  width: calc(50% - 20px);
+  padding: 10px;
+}
+
+.column img {
+  margin-top: 10px;
+  width: 100%;
+  height: auto;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}

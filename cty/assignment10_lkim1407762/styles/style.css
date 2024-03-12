@@ -1,0 +1,86 @@
+body {
+  font-family: Montserrat;
+}
+
+h1 {
+  font-size: 48px;
+	text-align-last: center;
+}
+
+h2 {
+  font-size: 24px;
+	text-align-last: center;
+}
+
+#navbar {
+  margin: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #1e41bd;
+  position: fixed;
+  z-index: 99;
+  height: 6rem;
+  font-size: 1.2rem;
+  transition: height 400ms ease;
+}
+
+#right {
+  margin: auto;
+}
+
+#navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 0.4rem;
+}
+
+#navbar a:hover {
+  opacity: 50%;
+}
+
+#logo {
+  width: auto;
+  height: 6rem;
+}
+
+#container {
+  position: relative;
+  top: 7rem;
+}
+
+.modal-container {
+  position: fixed;
+  bottom: 150px;
+  left: 50%;
+  width: 80%;
+}
+
+.modal-container .modal {
+  display: none;
+  position: relative;
+  z-index: 99;
+  left: -50%;
+  background-color: rgba(0,0,0,.5);
+  color: white;
+  text-align: center;
+  height: 100px;
+
+  -webkit-animation-name: fadeIn;
+  -webkit-animation-duration: 2s;
+  animation-name: fadeIn;
+  animation-duration: 2s
+}
+
+@-webkit-keyframes fadeIn
+{
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn
+{
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+  

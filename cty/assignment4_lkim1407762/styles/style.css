@@ -1,0 +1,40 @@
+body {
+  font-family: Montserrat;
+}
+
+img:first-child {
+  border: 1em solid #009ad6;
+}
+
+p:nth-child(2) {
+  color: #009ad6;
+  font-size: 1.5em;
+}
+
+img + p::first-letter {
+  font-size: 2em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+p:nth-child(3)::first-line {
+  font-size: 1.25em;
+}
+
+p:last-child {
+  color: #343deb;
+}
+
+h1 {
+  text-align: center;
+}
+
+h1::before {
+  content: url(../assets/monet.jpeg);
+  padding-right: 1.5em;
+}
+
+h1::after {
+  content: url(../assets/monet.jpeg);
+  padding-left: 1.5em;
+}

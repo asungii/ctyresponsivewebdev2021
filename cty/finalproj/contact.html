@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Jumpin' Juice Co.</title>
+	<meta charset="UTF-8">
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,200&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<nav id="navbar">
+    <img id="logo" src="assets/logo.jpg" alt="logo" />
+		<div id="right">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="faq.html">FAQs</a>
+      <a href="contact.html">Contact</a>
+      <a href="locations.html">Locations</a>
+    </div>
+	</nav>
+  <div id="container">
+    <div id="content">
+      <h1 class="backimgheader">Contact Us</h1>
+      <form>
+        <label for="firstname">First name:</label>
+        <br />
+        <input type="text" id="firstname" name="firstname" value="First name">
+        <br />
+        <label for="lastname">Last name:</label>
+        <br />
+        <input type="text" id="lastname" name="lastname" value="Last name">
+        <br />
+        <label for="email">Email:</label>
+        <br />
+        <input type="text" id="email" name="email" value="Email">
+        <br />
+        <br />
+        <label for="message">Message:</label>
+        <br />
+        <input type="text" id="message" name="message" value="Message">
+        <br />
+      </form>
+      <br />
+      <button id="submit">Submit</button>
+      <p>Thank you for your feedback! We appreciate input from our community.</p>
+    </div>
+
+    <footer>
+      <p>Copyright ©2021 Jumpin' Juice Co.</p>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("submit").onclick = function () {
+      console.log("click");
+      var message = "";
+      if(document.getElementById("firstname").value == "") {
+        console.log("firstname error");
+        message += "First name not entered. ";
+      } 
+      if(document.getElementById("lastname").value == "") {
+        console.log("lastname error");
+        message += "Last name not entered. "
+      }
+      if(document.getElementById("email").value == "") {
+        console.log("email error");
+        message += "Email not entered. ";
+      }
+      if(document.getElementById("message").value == "") {
+        console.log("message error");
+        message += "Message not entered. ";
+      }
+
+      console.log(message);
+      if (message != "") {
+        alert(message);
+      }
+    }
+  </script>
+
+</body>
+</html>

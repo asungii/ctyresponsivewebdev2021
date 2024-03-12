@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>America Travel Deals</title>
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,200&display=swap" rel="stylesheet">
+
+  <script>
+    var number = Math.ceil(Math.random() * 5);
+  </script>
+
+</head>
+
+<body>
+  <script>
+    var TRIES = 3;
+    for (i = TRIES; i > 0; i--) {
+      var guess = parseInt(prompt(number + "Enter your guess 1-5. " + i + " tries remaining."));
+      if (guess == number) {
+        alert("Congratulations! You won!");
+        break;
+      } else {
+        alert("Wrong. Try again.")
+      }
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+h1 {
+  text-shadow: darkred 5px 5px 10px;
+  text-align: center;
+}
+
+.cell {
+  display: inline-block;
+  width: 15%;
+  height: auto;
+  border: 8px solid darkred;
+  border-radius: 5px 25px 25px;
+  transition: transform 2s;
+  margin: 5px;
+}
+
+.cell:hover {
+  transform: translateY(10px);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
